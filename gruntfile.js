@@ -19,7 +19,7 @@ module.exports = function ( grunt ) {
 			' * Milligram v<%= pkg.version %>\n'+
 			' * <%= pkg.homepage %>\n'+
 			' *\n'+
-			' * Copyright (c) 2015, CJ Patoilo\n'+
+			' * Copyright (c) '+new Date().getFullYear()+' CJ Patoilo\n'+
 			' * Licensed under the <%= pkg.license %> license\n'+
 			'*/\n\n',
 
@@ -58,7 +58,7 @@ module.exports = function ( grunt ) {
 			all: [ 'dist' ]
 		},
 
-		// Compile SASS files to CSS
+		// Compile Sass files to CSS
 		sass: {
 			minify: {
 				options: {
@@ -145,6 +145,3 @@ module.exports = function ( grunt ) {
 
 
 };
-
-
-// Code is Poetry
